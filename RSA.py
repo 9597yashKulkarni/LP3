@@ -30,7 +30,7 @@ def generateKey():
         generateKey()
 
 def RSA(p,q):
-    print("{} and {} is a prime number".format(p,q))
+    print("{} and {} are prime numbers".format(p,q))
     #2nd step
     N=p*q
     
@@ -46,10 +46,10 @@ def RSA(p,q):
             D=i
             break
         
-    print("{} is N".format(N)) 
-    print("{} is product".format(product))
-    print("{} is E".format(E))
-    print("{} is D".format(D))
+    #print("N  is {}".format(N)) 
+    #print("product((p-1)*(q-1)) is {}".format(product))
+    print("Encryption key is {}".format(E))
+    print("Decryption key is {}".format(D))
     
     """
     PT=input("Enter any plain text")
@@ -70,7 +70,7 @@ def RSA(p,q):
     pt=[]
     ct=[]
     CT=[]
-    PT=input("Enter any text")
+    PT=input("Enter any text \n")
     for i in PT:
         #print(i)
         pt.append(ord(i))#removing -65
