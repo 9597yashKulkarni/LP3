@@ -35,12 +35,11 @@ def generateKey():
                 E=i                
                 break
         #Finding D
-        for i in range(1,99):
+        for i in range(1,product-1):
             if(((i*E)%product)==1):
                 D=i
-            else:
-               # generateKey()
                 break
+            
         print("{} is N".format(N)) 
         print("{} is product".format(product))
         print("{} is E".format(E))
