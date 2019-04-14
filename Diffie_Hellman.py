@@ -41,3 +41,15 @@ def isPrime(num):
     return flag
 
 generateKey()
+
+"""
+OUTPUT:
+9349 and 6271 is a prime number
+x is 4340
+y is 9061
+A is (num2^x)mod num1 = 327
+B is (num2^y)mod num1 = 5070
+Key1 is 4774
+Key2 is 4774
+
+"""

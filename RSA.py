@@ -88,14 +88,14 @@ def RSA(p,q):
     for i in CT:
         print(i,end="")
     print("'")
-def isPrime(num):
+def isPrime(7):
     flag=0
     r=int(num/2)
     for i in range(2,r):
         if(num%i==0):
             flag=1
             break
-        i=i+1
+        #i=i+1
 
     return flag
 
@@ -103,3 +103,16 @@ N=0
 E=0
 D=0
 generateKey()
+
+"""
+OUTPUT:
+337 and 433 are prime numbers
+Encryption key is 5
+Decryption key is 58061
+
+Enter any text 
+Yash Kulkarni
+Plain text is Yash Kulkarni
+cipher text in numbers is [100542, 35328, 113077, 73807, 138523, 79573, 141949, 57515, 28550, 35328, 15795, 91072, 127202]
+Cipher text is :'Yash Kulkarni'
+"""
